@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1> Product Details</h1>
+    </div>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each productsArr}}
+            <tr>
+                
+                <td>
+                    {{this.productId}}
+                </td>
+                <td>
+                    {{this.name}}
+                </td>
+                <td>
+                    {{this.price}}
+                </td>
+                
+                
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</body>
+
+</html>
